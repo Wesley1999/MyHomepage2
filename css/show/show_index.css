@@ -1,0 +1,11 @@
+div {
+    opacity: 0.7;
+    animation: fade_in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in {
+    to {
+        opacity: 1;
+    }
+}

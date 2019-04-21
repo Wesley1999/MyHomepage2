@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    	alert("11111")
+        $(function () {
+        	alert("11111")
+        	$.ajax({
+                type: "POST",
+                url: "/getPages.action",
+                dataType: "json",// 回调
+                error: function () {
+                    alert("请求失败");
+                },
+                success: function (returnData) {
+                    if (page < 1 || page > returnData.pages) {
+                        alert("没有了");
+                        page += 1;
+                    } else {
+                        getBoard()
+                    }
+                }
+            })
+        })
+</head>
+<body>
+
+</body>
+</html>

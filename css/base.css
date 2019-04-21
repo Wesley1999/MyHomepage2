@@ -1,0 +1,56 @@
+/*基本的布局*/
+body {
+    margin: 0;
+}
+
+#parent {
+    overflow: hidden;
+    height: 100vh;
+}
+
+#header, #footer {
+    background: #a4a4a4;
+    height: 10vh;
+}
+
+#right, #left, #middle {
+    position: relative;
+    width: 33.3333333333%;
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    height: 80%;
+    transition: 1s;
+}
+
+#left {
+    background: #ffa7ac;
+}
+
+#middle {
+    background: #afffb0;
+}
+
+#right {
+    background: #acbfff;
+}
+
+#board {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #feff9a;
+}
+

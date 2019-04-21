@@ -1,0 +1,49 @@
+#left {
+    animation: show_left 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show_left {
+    to {
+        width: 100%;
+    }
+}
+
+
+
+#content {
+    animation: show_content 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show_content {
+    to {
+        opacity: 1;
+    }
+}
+
+
+#middle {
+    animation: hide_middle 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide_middle {
+    to {
+        width: 0%;
+        opacity: 0;
+    }
+}
+
+
+#right {
+    animation: hide_right 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide_right {
+    to {
+        width: 0%;
+        opacity: 0;
+    }
+}
